@@ -11,8 +11,8 @@ Bleu clair : #1EA5FF
 .btn{
     height: 50px;
     width: 300px;
-    background-color: #1EA5FF;
-    border: #1EA5FF solid 2.5px;
+    background-color: #FFA31E;
+    border: #FFA31E solid 2.5px;
     color: white;
     transition: all 0.3s ease-out;
     transition-duration: 0.3s;
@@ -22,8 +22,8 @@ Bleu clair : #1EA5FF
 }
 .btn:hover{
     color: white;
-    background-color: #006BB2;
-    border: #006BB2 solid 2.5px;
+    background-color: #B27C2F;
+    border: #B27C2F solid 2.5px;
     cursor: pointer;
     transition: all 0.3s ease-out;
     transition-duration: 0.3s;
@@ -40,7 +40,7 @@ div{
     margin-bottom: auto;
     width: 600px;
     height: 450px;
-    background-color: black;
-    margin-left: 25vw;
-    margin-top: 20vh;
+    background-color: #FFA31E;
+    border-radius: 2px;
+    color: #B27C2F;
 }
