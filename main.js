@@ -9,6 +9,22 @@ button.addEventListener('click', function () {
 	}
 });
 
+document.addEventListener('click', function () {
+    if(div.className == 'show'){
+        button.className = 'btnclosed';
+    }else{
+        button.className = 'btn';
+    }
+});
+
+document.addEventListener('keydown', function(e){
+    if(e.keyCode == 27){
+        button.className = 'btn';
+    }else{
+    	button.className = 'btnclosed';
+    }
+});
+
 var span = document.querySelector('span');
 span.addEventListener('click', function(){
 	div.className = 'hidden';
