@@ -1,21 +1,29 @@
-/* */
+/* Couleurs
+Jaune foncé : #B27C2F
+Jaune : #FFA31E
+Jaune clair : #FFAD38
+Bleu foncé : #006BB2
+Bleu clair : #1EA5FF
+*/
 
 
 /* Affichage du bouton permettant d'ouvrir le PopIn */
 .btn{
     height: 50px;
     width: 300px;
-    background-color: rebeccapurple;
-    border: rebeccapurple solid 1px;
+    background-color: #1EA5FF;
+    border: #1EA5FF solid 2.5px;
     color: white;
     transition: all 0.3s ease-out;
     transition-duration: 0.3s;
-    font-family: "Lucida Bright";
+    font-family: "Lucida";
     font-size: 30px;
+    border-radius: 2px;
 }
 .btn:hover{
-    color: rebeccapurple;
-    background-color: white;
+    color: white;
+    background-color: #006BB2;
+    border: #006BB2 solid 2.5px;
     cursor: pointer;
     transition: all 0.3s ease-out;
     transition-duration: 0.3s;
