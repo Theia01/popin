@@ -3,7 +3,7 @@ var div = document.querySelectorAll('div')[1];
 console.log(div)
 var button = document.querySelector('button');
 button.addEventListener('click', function () {	
-	if(div.classList.toggle('show')){
+	if(div.className == 'hidden'){
 		div.className = 'show';
 	}else{
 		div.className = 'hidden';
@@ -12,18 +12,18 @@ button.addEventListener('click', function () {
 
 var span = document.querySelector('span');
 span.addEventListener('click', function(){
-	div.className = '';
+	div.className = 'hidden';
 });
 
 document.addEventListener('keydown', function(e){
 	if(e.keyCode == 27){
-		div.className = '';
+		div.className = 'hidden';
 	}
 });
 
 var input = document.querySelectorAll('input')[1];
 input.addEventListener('click', function(){
-	div.className = '';
+	div.className = 'hidden';
 });
 
 document.querySelectorAll('input')[0].addEventListener("keypress", function(){
