@@ -34,7 +34,10 @@ div{
 
 .show{
     display: block;
+    position: absolute;
     width: 600px;
     height: 450px;
     background-color: black;
+    margin-left: 25vw;
+    margin-top: 20vh;
 }
