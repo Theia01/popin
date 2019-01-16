@@ -2,7 +2,6 @@ var button = document.querySelector('button');
 console.log('ok')
 button.addEventListener('click', function () {	
 	document.querySelector('div').classList.toggle('show');
-    document.querySelector('div2').classList.toggle('closed');
 });
 
 var span = document.querySelector('span');
