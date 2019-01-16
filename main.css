@@ -46,5 +46,13 @@ div{
 }
 
 span{
-    text-align: right;
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px 13px;
+    text-align: center;
+    position: relative;
+    left: 580px;
+    cursor: pointer;
 }
