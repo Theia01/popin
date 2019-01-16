@@ -10,14 +10,15 @@ Bleu clair : #1EA5FF
 /* Affichage du bouton permettant d'ouvrir le PopIn */
 .btn{
     height: 50px;
-    width: 300px;
+    width: 330px;
     background-color: #FFA31E;
     border: #FFA31E solid 2.5px;
     color: white;
     transition: all 0.3s ease-out;
     transition-duration: 0.3s;
-    font-family: "Lucida";
-    font-size: 30px;
+    font-family: "Verdana";
+    font-size: 26px;
+    font-weight: bold;
     border-radius: 2px;
 }
 .btn:hover{
@@ -41,7 +42,9 @@ div{
     width: 600px;
     height: 450px;
     background-color: #737373;
-    border-radius: 2px;
+    border: #FFA31E solid 6px;
+    background-image: url("face_a_face.jpg");
+    border-radius: 6px;
     color: #F2F2F2;
 
 }
@@ -64,6 +67,7 @@ span{
     padding: 10px 13px;
     text-align: center;
     position: relative;
+    bottom: 10px;
     left: 580px;
     cursor: pointer;
 }
@@ -76,7 +80,7 @@ img{
     position: absolute;
     z-index: 1;
 }
-
+/*
 body{
     margin: 0px;
-}
+} */
