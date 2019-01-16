@@ -20,3 +20,12 @@
     transition: all 0.3s ease-out;
     transition-duration: 0.3s;
 }
+.hidden{
+    display: none;
+}
+
+.show{
+    width: 600px;
+    height: 450px;
+    background-color: black;
+}
