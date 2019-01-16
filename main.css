@@ -46,6 +46,7 @@ div{
     border-radius: 2px;
     color: #B27C2F;
 }
+<<<<<<< HEAD
 .closed{
     background-color: black;
     opacity: 0.5;
@@ -54,4 +55,9 @@ div{
     background-color: black;
     height: 100%;
     width: 100%;
+=======
+
+span{
+    text-align: right;
+>>>>>>> 6b8124b5933b7dbdd6c08b4ba06b714aaaf97b3c
 }
