@@ -30,6 +30,8 @@ Bleu clair : #1EA5FF
 }
 div{
     display: none;
+    width: 0px;
+    height: 0px;
 }
 
 .show{
@@ -44,4 +46,25 @@ div{
     border-radius: 2px;
     color: #F2F2F2;
 
+}
+.closed{
+    background-color: black;
+    opacity: 0.5;
+}
+.body{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+}
+
+span{
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 10px 13px;
+    text-align: center;
+    position: relative;
+    left: 580px;
+    cursor: pointer;
 }
