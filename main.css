@@ -70,3 +70,13 @@ span{
 .center{
     text-align: center;
 }
+
+img{
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+body{
+    margin: 0px;
+}
