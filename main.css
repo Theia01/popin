@@ -1,0 +1,21 @@
+/* */
+
+
+/* Affichage du bouton permettant d'ouvrir le PopIn */
+.btn{
+    height: 25px;
+    width: 200px;
+    background-color: rebeccapurple;
+    border: rebeccapurple solid 1px;
+    color: white;
+    transition: all 0.3s ease-out;
+    transition-duration: 0.3s;
+    font-family: "Lucida Bright";
+}
+.btn:hover{
+    color: rebeccapurple;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    transition-duration: 0.3s;
+}
