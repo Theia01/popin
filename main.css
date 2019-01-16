@@ -30,8 +30,6 @@ Bleu clair : #1EA5FF
 }
 div{
     display: none;
-    width: 0px;
-    height: 0px;
 }
 
 .show{
@@ -67,4 +65,7 @@ span{
     position: relative;
     left: 580px;
     cursor: pointer;
+}
+.center{
+    text-align: center;
 }

@@ -13,7 +13,7 @@ document.addEventListener('keydown', function(e){
 	if(e.keyCode == 27){
 		document.querySelector('div').className = '';
 	}
-})
+});
 
 var input = document.querySelectorAll('input')[1];
 input.addEventListener('click', function(){
