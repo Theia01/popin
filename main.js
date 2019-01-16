@@ -1,7 +1,5 @@
 var button = document.querySelector('button');
 button.addEventListener('click', function () {
-
-    console.log("Test")
 	document.querySelector('div').classList.toggle('show');
     document.querySelector('div2').classList.toggle('closed');
 });
