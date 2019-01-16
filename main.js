@@ -1,22 +1,29 @@
+
+var div = document.querySelectorAll('div')[1];
+console.log(div)
 var button = document.querySelector('button');
 button.addEventListener('click', function () {	
-	document.querySelector('div').classList.toggle('show');
+	if(div.classList.toggle('show')){
+		div.className = 'show';
+	}else{
+		div.className = 'hidden';
+	}
 });
 
 var span = document.querySelector('span');
 span.addEventListener('click', function(){
-	document.querySelector('div').className = '';
+	div.className = '';
 });
 
 document.addEventListener('keydown', function(e){
 	if(e.keyCode == 27){
-		document.querySelector('div').className = '';
+		div.className = '';
 	}
 });
 
 var input = document.querySelectorAll('input')[1];
 input.addEventListener('click', function(){
-	document.querySelector('div').className = '';
+	div.className = '';
 });
 
 document.querySelectorAll('input')[0].addEventListener("keypress", function(){
