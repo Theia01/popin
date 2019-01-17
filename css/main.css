@@ -79,7 +79,7 @@ button{
     height: 450px;
     background-color: #737373;
     border: #FFA31E solid 6px;
-    background-image: url("image/face_a_face.jpg");
+    background-image: url("../image/face_a_face.jpg");
     border-radius: 6px;
     color: #F2F2F2;
     position: absolute;
