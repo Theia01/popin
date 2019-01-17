@@ -47,16 +47,6 @@ document.addEventListener('keydown', function(e){
 	}
 });
 
-//quand on valide le bouton submit
-var input = document.querySelectorAll('input')[1];
-input.addEventListener('click', function(){
-	div.className = 'hidden';
-	var p = document.createElement('p');
-	var texte = document.createTextNode('Votre demande a bien été prise en compte');
-	p.appendChild(texte);
-	document.body.querySelectorAll('div')[0].append(p)
-	document.querySelectorAll('div')[0].className = "close";
-});
 
 //permet d'activer ou non le bouton submit selon email
 document.querySelectorAll('input')[0].addEventListener("keypress", function(){
@@ -73,5 +63,12 @@ document.querySelectorAll('input')[0].addEventListener("keypress", function(){
 
 document.addEventListener('submit', function(e) {
     e.preventDefault();
+    div.className = 'hidden';
+	var p = document.createElement('p');
+	var texte = document.createTextNode('Votre demande a bien été prise en compte');
+	p.appendChild(texte);
+	document.body.querySelectorAll('div')[0].append(p)
+	document.querySelectorAll('div')[0].className = "close";
+	button.className = 'btn';
 });
 
