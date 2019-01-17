@@ -11,7 +11,7 @@
         <!-- Importation du CSS -->
         <link rel="stylesheet" href="css/main.css">
         <!-- Importation d'Axios -->
-        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     </head>
     <!-- Ouverture du corps de la page -->
     <body>
