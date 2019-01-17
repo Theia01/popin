@@ -1,6 +1,8 @@
 
 var div = document.querySelectorAll('div')[1];
 var button = document.querySelector('button');
+
+//quand on click sur le bouton recevoir peluche
 button.addEventListener('click', function () {	
 	if(div.className == 'hidden'){
 		div.className = 'show';
@@ -9,6 +11,7 @@ button.addEventListener('click', function () {
 	}
 });
 
+//transforme le bouton lors de la pop in
 document.addEventListener('click', function () {
     if(div.className == 'show'){
         button.className = 'btnclosed';
@@ -16,6 +19,7 @@ document.addEventListener('click', function () {
         button.className = 'btn';
     }
 });
+
 
 document.addEventListener('keydown', function(e){
     if(e.keyCode == 27){
@@ -45,6 +49,7 @@ input.addEventListener('click', function(){
 	document.body.append(p)
 });
 
+//permet d'activer ou non le bouton selon email
 document.querySelectorAll('input')[0].addEventListener("keypress", function(){
 	var email = document.querySelectorAll('input')[0].value;
 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -56,4 +61,8 @@ document.querySelectorAll('input')[0].addEventListener("keypress", function(){
 		document.querySelectorAll('input')[1].className = "vbtndbld"
 	}
 	})
+
+document.addEventListener('submit', function(e) {
+    e.preventDefault();
+});
 
