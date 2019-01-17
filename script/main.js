@@ -1,4 +1,3 @@
-
 var div = document.querySelectorAll('div')[1];
 var button = document.querySelector('button');
 
@@ -15,6 +14,7 @@ button.addEventListener('click', function () {
 		div.className = 'hidden';
 	}
 });
+
 
 // Transformer le bouton lorsque le popin est ouvert
 document.addEventListener('click', function () {
@@ -45,7 +45,7 @@ span.addEventListener('click', function(){
 // Si l'on appuie sur la touche "Echap", fermer le popin
 document.addEventListener('keydown', function(e){
 	if(e.keyCode == 27){
-		showP()
+		showP();
     	document.querySelectorAll('div')[0].className = "close";
 		div.className = 'hidden';
 	}
@@ -72,7 +72,7 @@ document.addEventListener('submit', function(e) {
 	var p = document.createElement('p');
 	var texte = document.createTextNode('Votre demande a bien été prise en compte');
 	p.appendChild(texte);
-	document.body.querySelectorAll('div')[0].append(p)
+	document.body.querySelectorAll('div')[0].append(p);
 	document.querySelectorAll('div')[0].className = "close";
 	button.className = 'btn';
 	showP();
