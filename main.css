@@ -6,8 +6,13 @@ Bleu foncé : #006BB2
 Bleu clair : #1EA5FF
 */
 
-
 /* Bouton permettant d'ouvrir le PopIn */
+button{
+    margin-top: 4px;
+    margin-left: 4px;
+    position: absolute;
+}
+
 .btn{
      height: 50px;
      width: 330px;
@@ -70,10 +75,6 @@ Bleu clair : #1EA5FF
 
 .show{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: auto;
-    margin-bottom: auto;
     width: 600px;
     height: 450px;
     background-color: #737373;
@@ -83,7 +84,14 @@ Bleu clair : #1EA5FF
     color: #F2F2F2;
     position: absolute;
     z-index: 3;
-    left: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
 
 }
 /*Fond popin*/
