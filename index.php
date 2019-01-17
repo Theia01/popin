@@ -19,6 +19,7 @@
             <input type="submit" class="vbtndbld" name="forminscription" value="S'inscrire" disabled />
         </form>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
     <script type="application/javascript" src="script/main.js"></script>
     </body>
 </html>
