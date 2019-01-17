@@ -6,11 +6,13 @@ var button = document.querySelector('button');
 button.addEventListener('click', function () {	
 	if(div.className == 'hidden'){
 		document.querySelectorAll('div')[0].className = "open";
+		document.querySelectorAll('p').className = "text_off";
 		div.className = 'show';
 
 	}else{
 		document.querySelectorAll('div')[0].className = "closed";
 		div.className = 'hidden';
+		document.querySelectorAll('p').className = "text_off";
 	}
 });
 
