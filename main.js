@@ -32,7 +32,7 @@ document.addEventListener('keydown', function(e){
     }
 });
 
-//pour a croix X
+//pour la croix X
 var span = document.querySelector('span');
 span.addEventListener('click', function(){
 	document.querySelectorAll('div')[0].className = "close";
