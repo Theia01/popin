@@ -61,7 +61,7 @@ input.addEventListener('click', function(){
 //permet d'activer ou non le bouton submit selon email
 document.querySelectorAll('input')[0].addEventListener("keypress", function(){
 	var email = document.querySelectorAll('input')[0].value;
-	var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,4})+$/;
+	var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,4})+$/;
 	if(re.test(email)){
 		document.querySelectorAll('input')[1].disabled = "";
 		document.querySelectorAll('input')[1].className = "vbtn"
