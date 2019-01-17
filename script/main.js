@@ -2,7 +2,7 @@
 var div = document.querySelectorAll('div')[1];
 var button = document.querySelector('button');
 
-//quand on click sur le bouton recevoir peluche
+// Lorsqu'on clique sur le bouton
 button.addEventListener('click', function () {	
 	if(div.className == 'hidden'){
 		document.querySelectorAll('div')[0].className = "open";
@@ -16,7 +16,7 @@ button.addEventListener('click', function () {
 	}
 });
 
-//transforme le bouton lors de la pop in
+// Transformer le bouton lorsque le popin est ouvert
 document.addEventListener('click', function () {
     if(div.className == 'show'){
         button.className = 'btnclosed';
@@ -25,7 +25,7 @@ document.addEventListener('click', function () {
     }
 });
 
-
+// Remettre le bouton à son état d'origine si l'on appuie sur la touche "Echap" alors que le popin est ouvert
 document.addEventListener('keydown', function(e){
     if(e.keyCode == 27){
         button.className = 'btn';
@@ -34,7 +34,7 @@ document.addEventListener('keydown', function(e){
     }
 });
 
-//pour la croix X
+// Fonctionnement du bouton permettant de fermer le popin
 var span = document.querySelector('span');
 span.addEventListener('click', function(){
 	showP();
@@ -42,7 +42,7 @@ span.addEventListener('click', function(){
 	div.className = 'hidden';
 });
 
-//pour le bouton echap
+// Si l'on appuie sur la touche "Echap", fermer le popin
 document.addEventListener('keydown', function(e){
 	if(e.keyCode == 27){
 		showP()
@@ -52,7 +52,7 @@ document.addEventListener('keydown', function(e){
 });
 
 
-//permet d'activer ou non le bouton submit selon email
+// Activation du bouton type submit lorsque le mail remplit les conditions
 document.querySelectorAll('input')[0].addEventListener("keypress", function(){
 	var email = document.querySelectorAll('input')[0].value;
 	var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,4})+$/;
@@ -65,6 +65,7 @@ document.querySelectorAll('input')[0].addEventListener("keypress", function(){
 	}
 	});
 
+// Affichage du message de validation lorsque l'email est sauvegardé
 document.addEventListener('submit', function(e) {
     e.preventDefault();
     div.className = 'hidden';
@@ -77,7 +78,7 @@ document.addEventListener('submit', function(e) {
 	showP();
 });
 
-//fonction balise p pour qu'elles'affiche ou non
+// Affichage de la balise "p", message de validation
 function hiddenP(){
 	for(i = 0; i<document.querySelectorAll('p').length; i++){
 		document.querySelectorAll('p')[i].className = "text_off";
