@@ -143,6 +143,8 @@ p{
     width: 400px;
     text-align: center;
     margin-left: 4px;
+    z-index: 2;
+    position: absolute;
 }
 
 /* Bouton de validation */
