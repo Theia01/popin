@@ -67,6 +67,16 @@ document.querySelectorAll('input')[0].addEventListener("keypress", function(){
 
 // Affichage du message de validation lorsque l'email est sauvegardé
 document.addEventListener('submit', function(e) {
+    $.post(
+        'script.php',
+        {
+            mail : $("#mail").val()
+        },
+        'text' // Format des données reçues.
+    );
+    function nom_fonction_retour(texte_recu){
+        // Du code pour gérer le retour de l'appel AJAX.
+    }
     e.preventDefault();
     div.className = 'hidden';
 	var p = document.createElement('p');

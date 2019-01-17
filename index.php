@@ -27,7 +27,7 @@
         <!-- Titre du popin -->
         <h1 class="center">Inscrivez-vous et recevez<br /> votre peluche !</h1><br />
         <!-- Ouverture du formulaire -->
-        <form class="center" method="POST" action="script.php"><br /><br />
+        <form class="center" method="POST" action=""><br /><br />
             <label for="mail" class="votreadressemail"><b>Votre adresse mail : </b></label><br /><br />
             <input type="text" id="mail" name="mail" class="email" /><br><br><br />
             <input type="submit" class="vbtndbld" name="forminscription" value="S'inscrire" disabled />
