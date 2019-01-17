@@ -81,12 +81,27 @@ Bleu clair : #1EA5FF
     background-image: url("face_a_face.jpg");
     border-radius: 6px;
     color: #F2F2F2;
-    position: relative;
+    position: absolute;
     z-index: 3;
+    left: 40%;
 
 }
+/*Fond popin*/
+.open{
+    position: absolute;
+    z-index: 2;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    transition-duration: 2s;
+}
+.closed{
+    background-color: white;
+}
 
-
+body{
+    margin: 0px;
+}
 /* Bouton pour fermer le popin */
 
 span{
@@ -163,3 +178,4 @@ body {
 .votreadressemail{
     font-size: 20px;
 }
+
