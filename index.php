@@ -5,6 +5,7 @@
         <link rel="icon" href="image/favicon_pas_ouf_parce_que_cest_celle_des_ops_mais_yavait_que_ca.png" />
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/main.css">
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     </head>
     <body>
     <div class="">
