@@ -6,13 +6,13 @@ var button = document.querySelector('button');
 button.addEventListener('click', function () {	
 	if(div.className == 'hidden'){
 		document.querySelectorAll('div')[0].className = "open";
-		document.querySelectorAll('p').className = "text_off";
+		hiddenP();
 		div.className = 'show';
 
 	}else{
+		showP();
 		document.querySelectorAll('div')[0].className = "closed";
 		div.className = 'hidden';
-		document.querySelectorAll('p').className = "text_off";
 	}
 });
 
@@ -37,6 +37,7 @@ document.addEventListener('keydown', function(e){
 //pour la croix X
 var span = document.querySelector('span');
 span.addEventListener('click', function(){
+	showP();
 	document.querySelectorAll('div')[0].className = "close";
 	div.className = 'hidden';
 });
@@ -44,6 +45,7 @@ span.addEventListener('click', function(){
 //pour le bouton echap
 document.addEventListener('keydown', function(e){
 	if(e.keyCode == 27){
+		showP()
     	document.querySelectorAll('div')[0].className = "close";
 		div.className = 'hidden';
 	}
@@ -72,5 +74,17 @@ document.addEventListener('submit', function(e) {
 	document.body.querySelectorAll('div')[0].append(p)
 	document.querySelectorAll('div')[0].className = "close";
 	button.className = 'btn';
+	showP();
 });
 
+//fonction balise p pour qu'elles'affiche ou non
+function hiddenP(){
+	for(i = 0; i<document.querySelectorAll('p').length; i++){
+		document.querySelectorAll('p')[i].className = "text_off";
+	}
+}
+function showP(){
+	for(i = 0; i<document.querySelectorAll('p').length; i++){
+		document.querySelectorAll('p')[i].className = "";
+	}
+}
