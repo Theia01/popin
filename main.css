@@ -137,6 +137,7 @@ body {
 
 p{
     font-weight: bold;
+    border: #FFA31E solid 3px;
     color: #FFA31E;
     height: 20px;
     width: 400px;
