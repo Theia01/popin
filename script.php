@@ -1,9 +1,28 @@
-<?php
-$bdd = new PDO("mysql:host=localhost;dbname=email;charset=utf8", "root", "");
-if(isset($_POST['email'])){
-$requete = $bdd ->prepare("INSERT INTO expediteur(email) VALUES(?)");
-$requete->execute(array($_POST['email']));
-?>
-<?php
+<?php header('Content-Type: text/html; charset=utf-8');
+
+//Récupération des valeurs
+$mail = $_POST['mail'];
+
+//Définition des paramètres de connexion
+$dsn = 'mysql:host=localhost;dbname=email';
+$username = 'database';
+$password = 'point-virgule';
+
+//Connexion à la base de données
+try
+    {
+        $bdd = new PDO($dsn, $username, $password);
+        $bdd->exec('SET NAMES utf8');
+    }
+catch (Exception $e)
+{
+die('Erreur : ' . $e->getMessage());
 }
-?>
+
+//Préparation de l'envoi des données vers la base de données
+$req = $bdd->prepare("INSERT INTO email (email) VALUES ('$mail')");
+
+//Envoi des données vers la base de données
+$req->execute(array(
+'mail' => $mail
+));
