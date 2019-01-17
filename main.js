@@ -43,9 +43,9 @@ document.addEventListener('keydown', function(e){
 var input = document.querySelectorAll('input')[1];
 input.addEventListener('click', function(){
 	div.className = 'hidden';
-	var p = document.createElement('p')
-	var texte = document.createTextNode('Votre demande à été pris en compte')
-	p.appendChild(texte)
+	var p = document.createElement('p');
+	var texte = document.createTextNode('Votre demande a bien été prise en compte');
+	p.appendChild(texte);
 	document.body.append(p)
 });
 
@@ -54,13 +54,13 @@ document.querySelectorAll('input')[0].addEventListener("keypress", function(){
 	var email = document.querySelectorAll('input')[0].value;
 	var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 	if(re.test(email)){
-		document.querySelectorAll('input')[1].disabled = ""
+		document.querySelectorAll('input')[1].disabled = "";
 		document.querySelectorAll('input')[1].className = "vbtn"
 	}else{
-		document.querySelectorAll('input')[1].disabled = "disabled"
+		document.querySelectorAll('input')[1].disabled = "disabled";
 		document.querySelectorAll('input')[1].className = "vbtndbld"
 	}
-	})
+	});
 
 document.addEventListener('submit', function(e) {
     e.preventDefault();
