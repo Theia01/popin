@@ -127,6 +127,14 @@ body {
     font-family: Verdana;
 }
 
+p{
+    font-weight: bold;
+    color: #FFA31E;
+    border: #FFA31E solid 3px;
+    height: 20px;
+    width: 400px;
+    text-align: center;
+}
 
 /* Bouton de validation */
 
