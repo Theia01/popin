@@ -34,7 +34,7 @@
         </form>
     </div>
     <!-- Importation du script JS -->
-    <script type="application/javascript" src="script/main.js"></script>
+    <script type="application/javascript" src="script/script.js"></script>
     </body>
 <!-- Fermeture du document -->
 </html>
