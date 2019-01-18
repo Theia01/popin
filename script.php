@@ -5,7 +5,7 @@ $mail = $_POST['mail'];
 
 //Définition des paramètres de connexion
 $dsn = 'mysql:host=localhost;dbname=email';
-$username = 'database';
+$username = 'databaseuh';
 $password = 'point-virgule';
 
 //Connexion à la base de données
