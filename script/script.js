@@ -76,9 +76,10 @@ document.addEventListener('submit', function(e) {
     .done(function(msg) {
                     console.log(msg)
                     if (msg == 'ok') {
-                        document.innerHTML = "Vous êtes connecté."
+                        alert("Ok");
                     } else {
-                        alert("no");
+                        alert("No");
+                        console.log("no")
                     }
                 });
     div.className = 'hidden';
