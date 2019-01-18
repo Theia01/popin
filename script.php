@@ -5,8 +5,8 @@ $mail = $_POST['mail'];
 
 //Définition des paramètres de connexion
 $dsn = 'mysql:host=localhost;dbname=email';
-$username = 'databaseuh';
-$password = 'point-virgule';
+$username = 'root';
+$password = 'bn';
 
 //Connexion à la base de données
 try
@@ -26,3 +26,9 @@ $req = $bdd->prepare("INSERT INTO email (email) VALUES ('$mail')");
 $req->execute(array(
 'mail' => $mail
 ));
+
+if ($req->rowCount()) {
+    echo 'ok';
+} else {
+    echo 'no';
+}
