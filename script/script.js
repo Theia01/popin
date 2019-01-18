@@ -70,10 +70,11 @@ document.addEventListener('submit', function(e) {
     e.preventDefault();
     $.ajax({
             method: "POST",
-            url: "http://localhost/Test/popin/script.php",
+            url: "script.php",
             data: {mail: document.querySelector('#mail').value}
       })
     .done(function(msg) {
+                    console.log(msg)
                     if (msg == 'ok') {
                         document.innerHTML = "Vous êtes connecté."
                     } else {
